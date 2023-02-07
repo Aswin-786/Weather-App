@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+
+}
+
 #myVideo {
   position: fixed;
   right: 0;
@@ -14,6 +18,9 @@
 
 .search {
   position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
 
 }
 
@@ -22,11 +29,13 @@ input {
   border: none;
   height: 40px;
   min-width: 250px;
-  width: 500px;
+  width: 300px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   padding: 20px;
   letter-spacing: 2px;
+  color: black;
+  font-weight: 700;
   opacity: 0.7;
 }
 
@@ -35,5 +44,19 @@ button {
   border: none;
   height: 40px;
   margin-left: -5px;
-  opacity: 0.7;
+  width: 70px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  color: white ;
+  background: black;
+  transition: .3s ease-in-out;
+  cursor: pointer;
+
+}
+
+button:hover {
+  background: rgb(164, 159, 159);
+  color: black;
+  font-weight: 600;
+  transition: .3s ease-in-out;
 }
