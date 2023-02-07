@@ -38,7 +38,66 @@ body {
   border-radius: 20px;
   display: grid;
   grid-template-rows: 165px 165px 165px;
-  opacity: ;
+  opacity: 0.8;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+  place-items: center;
+}
+
+.cloud-image {
+  margin-top: 5px;
+}
+
+.mid {
+  text-align: center;
+}
+
+.clouds-type {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.temp-degree {
+  font-size: 30px;
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: 133px 133px 133px;
+}
+
+.wind {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+  place-items: center;
+}
+
+.pressure {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+  place-items: center;
+}
+
+.humidity {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+  place-items: center;
+
 }
 
 input {
