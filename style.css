@@ -16,12 +16,29 @@ body {
   min-height: 100%;
 }
 
-.search {
+.content {
   position: fixed;
+  display: flex;
+  flex-direction: column;
   top: 20%;
   left: 50%;
   transform: translate(-50%, -20%);
+}
 
+.search {
+  margin: 20px auto 0;
+
+}
+
+.output {
+  height: 500px;
+  width: 400px;
+  background: white;
+  margin: 20px auto;
+  border-radius: 20px;
+  display: grid;
+  grid-template-rows: 165px 165px 165px;
+  opacity: ;
 }
 
 input {
