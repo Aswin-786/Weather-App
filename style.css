@@ -37,7 +37,7 @@ body {
   margin: 20px auto;
   border-radius: 20px;
   display: grid;
-  grid-template-rows: 165px 165px 165px;
+  grid-template-rows: 165px 150px 180px;
   opacity: 0.8;
 }
 
@@ -48,10 +48,15 @@ body {
   justify-content: center;
   text-align: center;
   place-items: center;
+
+}
+
+#place {
+  margin-top: 20px;
 }
 
 .cloud-image {
-  margin-top: 5px;
+  margin-top: 20px;
 }
 
 .mid {
@@ -59,8 +64,9 @@ body {
 }
 
 .clouds-type {
-  font-size: 35px;
-  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 30px 0 20px;
 }
 
 .temp-degree {
@@ -70,6 +76,8 @@ body {
 .bottom {
   display: grid;
   grid-template-columns: 133px 133px 133px;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .wind {
@@ -79,6 +87,11 @@ body {
   justify-content: center;
   text-align: center;
   place-items: center;
+  margin-left: -15px;
+}
+
+.wind-name {
+  margin-bottom: 15px;
 }
 
 .pressure {
@@ -88,6 +101,11 @@ body {
   justify-content: center;
   text-align: center;
   place-items: center;
+  margin-left: -15px;
+}
+
+.pressure-name {
+  margin-bottom: 15px;
 }
 
 .humidity {
@@ -97,7 +115,10 @@ body {
   justify-content: center;
   text-align: center;
   place-items: center;
+}
 
+.humidity-name {
+  margin-bottom: 15px;
 }
 
 input {
@@ -114,6 +135,7 @@ input {
   font-weight: 700;
   opacity: 0.7;
 }
+
 
 button {
   outline: none;
