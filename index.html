@@ -21,7 +21,7 @@
 
       <div class="content">
         <div class="search">
-          <input type="search" placeholder="Enter location" name="" id="">
+          <input type="search" placeholder="Enter location" name="" id="search-id">
           <button id="btn">
             Search
           </button>
@@ -29,12 +29,12 @@
         <div class="output">
           <div class="top">
             <div class="title">
-              <h1 class="place">
+              <h1 id="place">
                 Miami
               </h1>
             </div>
             <div class="cloud-image">
-              <img src="image/sunny.png" alt="">
+              <img id="img" src="image/sunny.png" alt="">
             </div>
           </div>
           <div class="mid">
@@ -44,11 +44,13 @@
               </p>  
             </div>
             <div class="temp">
-              <p class="temp-degree">
-                30 <sup>°C</sup>
+              <p>
+                <span class="temp-degree">
+                  30
+                </span>
+                <sup>°C</sup>
               </p>
             </div>
-
           </div>
           <div class="bottom">
             <div class="wind">
@@ -59,7 +61,7 @@
               </div>
               <div class="wind-value">
                 <p>
-                  <span>
+                  <span id="wind-speed">
                     5
                   </span>
                     kmph
@@ -69,12 +71,12 @@
             <div class="pressure">
               <div class="pressure-name">
                 <p>
-                  pressure :
+                  PRESSURE :
                 </p>
               </div>
               <div class="pressure-value">
                 <p>
-                  <span>
+                  <span id="pressure-num">
                     1000
                   </span>
                     hPa
@@ -84,12 +86,12 @@
             <div class="humidity">
               <div class="humidity-name">
                 <p>
-                  humidity :
+                  HUMIDITY :
                 </p>
               </div>
               <div class="humidity-value">
                 <p>
-                  <span>
+                  <span id="humid">
                     80
                   </span>
                     %
