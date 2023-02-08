@@ -7,18 +7,13 @@
 
     <link rel="icon" type="image/x-icon" href="image/favicon.png">
 
-    
-
 </head>
 <body>
-
     <main>
-
       <video autoplay muted loop id="myVideo">
         <source src="video/weather-background.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
       </video>
-
       <div class="content">
         <div class="search">
           <input type="search" placeholder="Enter location" name="" id="search-id">
@@ -30,7 +25,7 @@
           <div class="top">
             <div class="title">
               <h1 id="place">
-                Miami
+                SAHARA
               </h1>
             </div>
             <div class="cloud-image">
@@ -40,16 +35,25 @@
           <div class="mid">
             <div class="clouds">
               <p class="clouds-type">
-                Clouds
+                Clear
               </p>  
             </div>
             <div class="temp">
               <p>
-                <span class="temp-degree">
-                  30
-                </span>
-                <sup>°C</sup>
+                <span class="temp-degree"> 30</span><sup>°C</sup>
               </p>
+            </div>
+            <div class="temp-1">
+              <div class="max">
+                <p>
+                 MAX TEMP : <span id="max-temp">35 </span><sup>°C</sup>
+                </p>
+              </div>
+              <div class="min">
+                <p>
+                  MIN TEMP : <span id="min-temp">25 </span><sup>°C</sup>
+                </p>
+              </div>
             </div>
           </div>
           <div class="bottom">
@@ -101,10 +105,7 @@
           </div>
         </div>
       </div>
-      
     </main>
-
     <script src="script.js"></script>
-
 </body>
 </html>
