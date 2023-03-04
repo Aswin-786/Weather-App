@@ -17,11 +17,16 @@ const humidity = document.getElementById('humid')
 const img = document.getElementById('img')
 
 // action happens when button click
-button.onclick = () => {
+button.addEventListener('click', () => {
   const city = search.value
   getWeatherData(city)
-  place.innerHTML = city.toUpperCase()
-}
+})
+
+// search input keyup 
+// search.onkeyup = () => {
+//   const city = search.value
+//   getWeatherData(city)
+// }
 
 // accessing data from API
 const getWeatherData = (city) => {
@@ -34,9 +39,9 @@ const getWeatherData = (city) => {
     .then((e) => e.json())
     .then((data) => {
       console.log(data)
-
       showWeatherData(data)
     })
+    .catch((error) => console.log(error))
 }
 
 // updating to DOM
@@ -47,13 +52,14 @@ const showWeatherData = (weatherData) => {
   humidity.innerHTML = weatherData.main.humidity
   min.innerHTML = Math.round(weatherData.main.temp_min - 273.15)
   max.innerHTML = Math.round(weatherData.main.temp_max - 273.15)
+  place.innerHTML = weatherData.name.toUpperCase()
 
   const image = weatherData.weather[0].main
   showImage(image,temp)
   console.log(weatherData.weather[0].main)
 }
 
-// updating the cloud image
+// updating the cloud images
 const showImage = (image,temp) => {
   type.innerHTML = image
    
