@@ -1,7 +1,7 @@
 # Weather-App
 
 This weather app allows users to get real-time weather updates for their desired cities. Simply type in the city name and get instant access to current weather information such as temperature, humidity, wind speed, and more. The app utilizes API calls to retrieve live weather data and display it to the user in an easy-to-read format.
-
+Live : https://aswin-786.github.io/Weather-App/
 
 # Key Features
 
