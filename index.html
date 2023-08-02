@@ -1,111 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Weather App</title>
-
-    <link rel="stylesheet" type="text/css" href="style.css">
-
-    <link rel="icon" type="image/x-icon" href="image/favicon.png">
-
+  <title>Weather App</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" type="image/x-icon" href="image/favicon.png">
 </head>
 <body>
-    <main>
-      <video autoplay muted loop id="myVideo">
-        <source src="video/weather-background.mp4" type="video/mp4">
-        Your browser does not support HTML5 video.
-      </video>
-      <div class="content">
-        <div class="search">
-          <input type="search" placeholder="Enter location" name="" id="search-id">
-          <button id="btn">
-            Search
-          </button>
+  <main>
+    <video autoplay muted loop id="myVideo">
+      <source src="video/weather-background.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    <div class="content">
+      <div class="search">
+        <input type="search" placeholder="Enter location" name="" id="search-id">
+        <button id="btn">Search</button>
+      </div>
+      <div class="output">
+        <div class="top">
+          <div class="title">
+            <h1 id="place">SAHARA</h1>
+          </div>
+          <div class="cloud-image">
+            <img id="img" src="image/sunny.png" alt="">
+          </div>
         </div>
-        <div class="output">
-          <div class="top">
-            <div class="title">
-              <h1 id="place">
-                SAHARA
-              </h1>
+        <div class="mid">
+          <div class="clouds">
+            <p class="clouds-type">Clear</p>
+          </div>
+          <div class="temp">
+            <p><span class="temp-degree">30</span><sup>°C</sup></p>
+          </div>
+          <div class="temp-1">
+            <div class="max">
+              <p>MAX TEMP : <span id="max-temp">35</span><sup>°C</sup></p>
             </div>
-            <div class="cloud-image">
-              <img id="img" src="image/sunny.png" alt="">
+            <div class="min">
+              <p>MIN TEMP : <span id="min-temp">25</span><sup>°C</sup></p>
             </div>
           </div>
-          <div class="mid">
-            <div class="clouds">
-              <p class="clouds-type">
-                Clear
-              </p>  
+        </div>
+        <div class="bottom">
+          <div class="wind">
+            <div class="wind-name">
+              <p>WIND :</p>
             </div>
-            <div class="temp">
-              <p>
-                <span class="temp-degree"> 30</span><sup>°C</sup>
-              </p>
-            </div>
-            <div class="temp-1">
-              <div class="max">
-                <p>
-                 MAX TEMP : <span id="max-temp">35 </span><sup>°C</sup>
-                </p>
-              </div>
-              <div class="min">
-                <p>
-                  MIN TEMP : <span id="min-temp">25 </span><sup>°C</sup>
-                </p>
-              </div>
+            <div class="wind-value">
+              <p><span id="wind-speed">5</span> kmph</p>
             </div>
           </div>
-          <div class="bottom">
-            <div class="wind">
-              <div class="wind-name">
-                <p>
-                  WIND :
-                </p>
-              </div>
-              <div class="wind-value">
-                <p>
-                  <span id="wind-speed">
-                    5
-                  </span>
-                    kmph
-                </p>
-              </div>
+          <div class="pressure">
+            <div class="pressure-name">
+              <p>PRESSURE :</p>
             </div>
-            <div class="pressure">
-              <div class="pressure-name">
-                <p>
-                  PRESSURE :
-                </p>
-              </div>
-              <div class="pressure-value">
-                <p>
-                  <span id="pressure-num">
-                    1000
-                  </span>
-                    hPa
-                </p>
-              </div>
+            <div class="pressure-value">
+              <p><span id="pressure-num">1000</span> hPa</p>
             </div>
-            <div class="humidity">
-              <div class="humidity-name">
-                <p>
-                  HUMIDITY :
-                </p>
-              </div>
-              <div class="humidity-value">
-                <p>
-                  <span id="humid">
-                    80
-                  </span>
-                    %
-                </p>
-              </div>
+          </div>
+          <div class="humidity">
+            <div class="humidity-name">
+              <p>HUMIDITY :</p>
+            </div>
+            <div class="humidity-value">
+              <p><span id="humid">80</span>%</p>
             </div>
           </div>
         </div>
       </div>
-    </main>
-    <script src="script.js"></script>
+    </div>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>
